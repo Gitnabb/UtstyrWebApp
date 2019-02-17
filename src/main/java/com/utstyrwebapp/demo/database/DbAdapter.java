@@ -20,6 +20,7 @@ public class DbAdapter {
 
     }
 
+    /*- 04 Connector -------------------*/
     public void connect(){
         try{
             // Connect to database
@@ -30,6 +31,7 @@ public class DbAdapter {
         }
     } // Connected
 
+    /*- 05 Disconnector -----------------*/
     public void disconnect(){
         try{
             if (statement != null){

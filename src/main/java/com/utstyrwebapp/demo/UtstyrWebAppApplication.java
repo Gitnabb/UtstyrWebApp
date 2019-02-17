@@ -1,6 +1,6 @@
 package com.utstyrwebapp.demo;
 
-import com.utstyrwebapp.demo.database.DbAdapter;
+import com.utstyrwebapp.demo.database.DbImplement;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,10 +13,15 @@ public class UtstyrWebAppApplication {
         System.out.println("** Utstyr Web App started**");
 
         // Initialize database and connect
-        DbAdapter dbAdapter = new DbAdapter();
-        dbAdapter.connect();
-        // dbAdapter.disconnect();
+        DbImplement dbImplement = new DbImplement();
 
+        dbImplement.connect();
+
+        // Create tables of equipment
+        dbImplement.createTables();
+
+        // Disconnect from database
+        // dbImplement.disconnect();
 
     }
 

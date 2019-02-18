@@ -1,4 +1,4 @@
-package com.utstyrwebapp.demo.database;
+package com.utstyrwebapp.demo.Database;
 
 import java.sql.SQLException;
 

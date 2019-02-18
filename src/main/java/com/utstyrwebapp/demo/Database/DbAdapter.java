@@ -1,4 +1,4 @@
-package com.utstyrwebapp.demo.database;
+package com.utstyrwebapp.demo.Database;
 import java.sql.*;
 
 public class DbAdapter {
@@ -23,7 +23,7 @@ public class DbAdapter {
     /*- 04 Connector -------------------*/
     public void connect(){
         try{
-            // Connect to database
+            // Connect to Database
             connection = DriverManager.getConnection(jdbUrl, username, password);
             System.out.println("Connection established");
         } catch(SQLException e){

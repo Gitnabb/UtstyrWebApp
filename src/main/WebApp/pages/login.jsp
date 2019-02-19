@@ -43,9 +43,8 @@
                 <a class="nav-link enabled" href="#">Disabled</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" action="login">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login
-            </button>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login</button>
         </form>
     </div>
 </nav>

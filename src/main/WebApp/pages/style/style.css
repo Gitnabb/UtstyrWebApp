@@ -1,0 +1,12 @@
+.form-inline{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+
+.table {
+    border: 1px solid black;
+}
+

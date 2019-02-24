@@ -1,9 +1,8 @@
-package com.utstyrwebapp.demo.Controller;
+package no.astudent.utstyrwebapp.controller;
 
-import com.utstyrwebapp.demo.User;
+import no.astudent.utstyrwebapp.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -25,17 +24,5 @@ public class HomeController {
         return modelAndView;
 
     }
-
-    /*
-    @RequestMapping("home")
-    public String home(HttpServletRequest request, HttpServletResponse response) {
-
-        HttpSession session = request.getSession();
-        String name = request.getParameter("name");
-        System.out.println("Home request from User: " + name + "!");
-        session.setAttribute("name", name);
-        return "home";
-    */
-
 }
 

@@ -1,4 +1,4 @@
-package com.utstyrwebapp.demo;
+package no.astudent.utstyrwebapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

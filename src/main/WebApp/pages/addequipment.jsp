@@ -4,9 +4,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Utstyr webapp</title>
 </head>
@@ -53,12 +53,13 @@
 <br>
 
 <h1>Log in or something</h1>
-<div class="col-md-4 col-md-offset-4">
+<div class="form-inline"> <!-- col-md-4 col-md-offset-4 -->
     <div>
-        <form action="addUser">
-            <input type="text" name=userID><br>
-            <input type="text" name=userName>
-            <input type="submit"> <br>
+        <form action="addEquipment">
+            <input type="text" name=equipmentName>
+            <input type="text" name=borrowTime>
+            <input type="text" name=tullball>
+            <input type="submit" value="Legg til">
 
         </form>
     </div>
@@ -66,7 +67,7 @@
 </div>
 
 
-<h3> Welcome ${userObject.userID} , ${userObject.userName} </h3>
+<h4> Equipment ${EquipmentObj.equipmentName} has been added (not really). It can be borrowed for ${EquipmentObj.borrowTime} days.</h4>
 
 </body>
 </html>
